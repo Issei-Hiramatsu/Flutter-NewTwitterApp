@@ -50,7 +50,7 @@ class TwitterSliverAppBar extends StatelessWidget {
                 iconAction;
               }),
         ],
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.white,
         bottom: PreferredSize(
             preferredSize: const Size.fromHeight(0.0),
             child: Container(
