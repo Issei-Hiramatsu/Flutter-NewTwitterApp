@@ -22,10 +22,9 @@ class _SliverTabBarDelegate extends SliverPersistentHeaderDelegate {
       BuildContext context, double shrinkOffset, bool overlapsContent) {
     return DecoratedBox(
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.0),
-        border:
-            Border(bottom: BorderSide(color: Colors.grey.shade200, width: 2)),
-      ),
+          color: Colors.white.withOpacity(0.0),
+          border: Border(
+              bottom: BorderSide(color: Colors.grey.shade200, width: 2))),
       child: Container(
         child: tabBar,
       ),
@@ -61,6 +60,7 @@ class NotificationPage extends StatelessWidget {
                       pinned: true,
                       delegate: _SliverTabBarDelegate(
                           tabBar: TabBar(
+                        indicatorSize: TabBarIndicatorSize.label,
                         labelColor: Colors.black,
                         indicatorColor: Colors.blue,
                         tabs: [
@@ -75,13 +75,13 @@ class NotificationPage extends StatelessWidget {
                 children: [
                   //TODO Tabごとにウィジェットを設定する
                   Center(
-                    child: Text('', style: TextStyle(fontSize: 32.0)),
+                    child: Text('a', style: TextStyle(fontSize: 32.0)),
                   ),
                   Center(
-                    child: Text('', style: TextStyle(fontSize: 32.0)),
+                    child: Text('b', style: TextStyle(fontSize: 32.0)),
                   ),
                   Center(
-                    child: Text('', style: TextStyle(fontSize: 32.0)),
+                    child: Text('c', style: TextStyle(fontSize: 32.0)),
                   ),
                 ],
               ),
