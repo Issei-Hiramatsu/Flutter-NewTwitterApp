@@ -20,8 +20,15 @@ class _SliverTabBarDelegate extends SliverPersistentHeaderDelegate {
   @override
   Widget build(
       BuildContext context, double shrinkOffset, bool overlapsContent) {
-    return Container(
-      child: tabBar,
+    return DecoratedBox(
+      decoration: BoxDecoration(
+        color: Colors.white.withOpacity(0.0),
+        border:
+            Border(bottom: BorderSide(color: Colors.grey.shade200, width: 2)),
+      ),
+      child: Container(
+        child: tabBar,
+      ),
     );
   }
 
