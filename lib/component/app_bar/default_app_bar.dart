@@ -27,7 +27,9 @@ class TwitterDefaultAppBar extends StatelessWidget with PreferredSizeWidget {
               width: 30.0,
               height: 30.0,
               child: TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Scaffold.of(context).openDrawer();
+                },
                 child: Container(
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
