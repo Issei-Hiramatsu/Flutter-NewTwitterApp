@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../component/app_bar/sliver_app_bar.dart';
-import '../../component/bottom_navigation_bar.dart';
+import '../molecule/app_bar/sliver_app_bar.dart';
+import '../molecule/app_bar/bottom_navigation_bar.dart';
 
 class TrendPage extends StatelessWidget {
   @override

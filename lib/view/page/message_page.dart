@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../component/app_bar/default_app_bar.dart';
-import '../../component/bottom_navigation_bar.dart';
+import '../molecule/app_bar/default_app_bar.dart';
+import '../molecule/app_bar/bottom_navigation_bar.dart';
 
 class MessagePage extends StatelessWidget {
   @override
